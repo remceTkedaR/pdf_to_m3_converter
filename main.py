@@ -9,24 +9,24 @@ import pdfplumber
 import pyttsx3
 import time
 
-# Otwórz plik PDF
+# Open file PDF
 with pdfplumber.open('file.pdf') as pdf:
-    # Konfiguracja silnika TTS
+    # Engine TTS configuration
     speaker = pyttsx3.init()
-    speaker.setProperty('rate', 100)  # Ustawienie szybkości mówienia (100 to domyślna wartość)
-    speaker.setProperty('voice', 'your_preferred_male_voice')  # Wprowadź nazwę preferowanego męskiego lektora
+    speaker.setProperty('rate', 100)  # Speech rate setting (100 is the default value)
+    speaker.setProperty('voice', 'your_preferred_male_voice')  # Enter the name of your preferred male voiceover
 
     for page in pdf.pages:
         text = page.extract_text()
         clean_text = text.strip().replace('\n', ' ')
         print(clean_text)
 
-        # Zapisz tekst do pliku MP3
+        # Save to MP3
         mp3_file = f'page_{page.page_number}.mp3'
         speaker.save_to_file(clean_text, mp3_file)
         speaker.runAndWait()
 
-        # Poczekaj chwilę przed przetworzeniem kolejnej strony
+        # Please wait a while before processing the next page
         time.sleep(1)
 
     speaker.stop()

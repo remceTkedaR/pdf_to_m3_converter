@@ -8,8 +8,11 @@ python 3.x
 * library time
 
 ## About
-A simple program that allows you to convert an improved pdf file to an mp3 sound file
+"If you want to convert your books, manuals, and similar 
+materials into audiobooks, this program can help you. 
+It's a simple Python code that will convert the specified 
+PDF file into partial MP3 audio files."
 
 
 
-## Radosław Tecmer 2023 yer  [RT](http://electronic.pythonanywhere.com/#about).
+## Radosław Tecmer 2023 year  [RT](http://electronic.pythonanywhere.com/#about).

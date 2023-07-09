@@ -1,7 +1,9 @@
-# This is a sample Python script.
+# ############################### #
+# by Radosław Tecmer (remceTkedaR)
+# radoslaw69tecmer@gmail.com
+# ################################ #
 
 # Converting file PDF to file MP3.
-# Rdosław Tecmer radek69tecmer@gmail.com
 # GitHub - https://github.com/remceTkedaR.
 
 
